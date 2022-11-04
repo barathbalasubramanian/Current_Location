@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCATION</title>
+
+<!---------------------------------- stylesheet for leaflet map ----------------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+
+<!---------------------------------- url for leaflet map ------------------------------------------------->
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+
+</head>
+
+<style>
+#map {
+    width:90%;
+    height: 40vh;
+    margin: 2em;    
+    cursor:move;
+}
+.gmap_iframe {
+    width: 90%;
+    height: 40vh;
+    margin: 0 0 0 1.2em;
+}
+.form {
+    margin: 0 0 0 1.5em;
+}
+
+</style>
+
+<body>
+    <div id="map"></div>
+    <div class="mapper"></div>
+
+    <div class="form">
+        <input type="text" class="input"  pattern="[a-zA-Z]{3,}">
+        <button type="submit" class="btn">search</button>
+       
+    </div>
+    <script src="location.js"></script>
+</body>
+</html>
